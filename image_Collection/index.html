@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Language Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Language Image Gallery</h1>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showGallery('html', event)">HTML</div>
+    <div class="tab" onclick="showGallery('css', event)">CSS</div>
+    <div class="tab" onclick="showGallery('js', event)">JavaScript</div>
+  </div>
+
+  <div class="gallery" id="gallery-container">
+    <!-- Images inserted via JS -->
+  </div>
+
+  <div>
+    <button class="nav-btn" onclick="prevImage()">Previous</button>
+    <button class="nav-btn" onclick="nextImage()">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
